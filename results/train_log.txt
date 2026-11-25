@@ -1,0 +1,13 @@
+[SYNTHETIC] samples train/val/test = 30660/4380/8760
+Linear (Ridge)                     mean RMSE=0.677  R2=0.774  per-depth=[0.25 0.3  0.7  1.33 1.26 0.22]
+Random Forest                      mean RMSE=0.547  R2=0.848  per-depth=[0.22 0.25 0.51 1.09 1.02 0.19]
+MLP on raw patches                 mean RMSE=0.595  R2=0.823  per-depth=[0.21 0.25 0.55 1.21 1.15 0.2 ]
+Stage 1 autoencoder reconstruction R2 (test): 0.999
+OceanEmbed (ours)                  mean RMSE=0.615  R2=0.813  per-depth=[0.22 0.25 0.55 1.25 1.21 0.2 ]
+ablation SST only                   mean RMSE=1.313
+ablation SST+SLA                    mean RMSE=0.579
+ablation SST+SLA+SSS                mean RMSE=0.589
+ablation All 4 channels             mean RMSE=0.595
+ablation No SLA (SST+SSS+wind)      mean RMSE=1.444
+done in 116s
+plots saved
